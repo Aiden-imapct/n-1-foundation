@@ -19,6 +19,7 @@ export default {
         'display': ['Playfair Display', 'Georgia', 'serif'],
         'poppins':['Poppins', 'sans-serif'],
         'dm-serif':['DM Serif Display', 'serif'],
+        'sarabun':['Sarabun', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

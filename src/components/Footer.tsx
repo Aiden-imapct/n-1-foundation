@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
-import logoWhite from "@/assets/logo-white.png";
+import logoWhite from "@/assets/logo-white.svg";
 
 const Footer = () => {
   const quickLinks = [
@@ -31,20 +31,20 @@ const Footer = () => {
               />
             </Link>
             
-            <p className="text-white/90 leading-relaxed text-sm">
+            <p className="text-white/90 leading-relaxed text-xs sm:text-sm lg:text-sm font-sarabun font-medium">
               Creating better tomorrow through literacy, innovation, and community-led change.
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-lg text-white mb-6">Quick Links</h4>
+            <h4 className="font-bold text-base sm:text-lg lg:text-lg text-white mb-6 font-sarabun">Quick Links</h4>
             <ul className="space-y-3">
               {quickLinks.map((link, index) => (
                 <li key={index}>
                   <Link 
                     to={link.href}
-                    className="text-white/90 hover:text-white transition-colors text-sm block"
+                    className="text-white/90 hover:text-white transition-colors text-xs sm:text-sm lg:text-sm block  font-sarabun"
                   >
                     {link.name}
                   </Link>

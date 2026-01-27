@@ -31,10 +31,10 @@ const ProgramsSection = () => {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl lg:leading-[80px] font-dm-serif font-normal mb-4 text-[#004AAD]">
+          <h2 className="text-3xl sm:text-4xl lg:text-[55px] lg:leading-[80px] font-dm-serif font-normal text-[#004AAD]">
             Our <span className="italic">Programs</span>
           </h2>
-          <p className="text-2xl text-[#494949] max-w-3xl mx-auto font-poppins">
+          <p className="text-2xl text-[#494949] max-w-3xl mx-auto font-sarabun font-medium">
             Empowering communities through education and innovation
           </p>
         </div>
@@ -100,13 +100,7 @@ const ProgramsSection = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Link to="/programs">
-            <Button size="lg" className="bg-primary text-white hover:bg-primary/90 px-8 py-6 rounded-lg font-semibold shadow-lg">
-              View All Programs
-            </Button>
-          </Link>
-        </div>
+        
       </div>
     </section>
   );

@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-home.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[740px] flex items-center overflow-hidden">
+    <section className="relative min-h-[740px] flex items-center lg:items-end overflow-hidden">
       {/* Background Image */}
       <div className="absolute -top-[80px] z-0">
         <img 
@@ -16,19 +16,21 @@ const HeroSection = () => {
       </div>
       
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60 z-[1]"></div>
+      <div className="absolute bottom-0 start-0 w-full h-full bg-[linear-gradient(180deg,rgba(0,0,0,0)_23.42%,rgba(0,0,0,0.89)_89%)] z-1"></div>
       
       {/* Wave Decoration at Bottom */}
       <WaveDecoration position="bottom" />
+
+      
       
       {/* Content */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20 mb-40">
         <div className="max-w-5xl mx-auto text-center space-y-8">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-dm-serif font-normal leading-tight text-white animate-fade-in">
             One <span className="italic">Story</span>. One <span className="italic">Idea</span>. One <span className="italic">Action</span>.
           </h1>
           
-          <p className="text-lg sm:text-xl lg:text-2xl text-white leading-relaxed max-w-5xl mx-auto font-poppins">
+          <p className="text-lg sm:text-xl lg:text-2xl text-white leading-relaxed max-w-5xl mx-auto font-sarabun">
             Creating a Better Tomorrow through literacy, innovation, and community-led change
           </p>
 

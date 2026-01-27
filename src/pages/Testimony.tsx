@@ -114,7 +114,7 @@ const Testimony = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-dm-serif font-normal mb-4 text-[#004AAD]">What People Say About Us</h2>
-              <p className="text-[#494949] max-w-2xl mx-auto  font-medium">
+              <p className="text-[#494949] max-w-2xl mx-auto  font-medium font-sarabun">
                 Real stories from real people who have experienced the impact of our programs firsthand.
               </p>
             </div>
