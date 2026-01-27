@@ -27,10 +27,10 @@ const TestimonialsSection = () => {
     <section className=" pt-12 pb-20 bg-gradient-to-br from-blue-50/30 via-white to-orange-50/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-6xl font-dm-serif font-normal mb-4 text-[#004AAD]">
+          <h2 className="text-3xl sm:text-4xl lg:text-[55px]  lg:leading-[80px] font-dm-serif font-normal text-[#004AAD]">
             What People Say About Us
           </h2>
-          <p className="text-2xl text-[#494949] max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto font-medium">
+          <p className="text-2xl text-[#494949] max-w-2xl lg:max-w-4xl xl:max-w-5xl mx-auto font-medium font-sarabun">
             Real stories from real people who have experienced the impact firsthand
           </p>
         </div>

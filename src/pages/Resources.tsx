@@ -137,8 +137,8 @@ const Resources = () => {
             {/* Research & Publications */}
             <div className="mb-16">
               <div className="text-center mb-12">
-                <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-blue-600">Research & Publications</h2>
-                <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+                <h2 className="text-3xl sm:text-4xl lg:text-[55px] lg:leading-[80px] font-dm-serif font-normal text-[#004AAD]">Research & Publications</h2>
+                <p className="text-lg sm:text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto">
                   Evidence-based insights from our <span className="text-orange-500 font-medium">programs</span> and <span className="text-orange-500 font-medium">research initiatives</span>
                 </p>
               </div>

@@ -21,7 +21,7 @@ const GetInvolvedSection = () => {
             Be Part of the Change
           </h2>
           
-          <p className="text-lg 2l:text-2xl text-white/95 max-w-5xl mx-auto leading-relaxed font-poppins">
+          <p className="text-xl lg:text-2xl text-white/95 max-w-5xl mx-auto leading-relaxed font-sarabun">
             Every story read, every problem solved, every hour volunteered creates ripples of transformation
           </p>
 
