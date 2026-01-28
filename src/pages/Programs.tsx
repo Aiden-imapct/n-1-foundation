@@ -173,44 +173,44 @@ const Programs = () => {
                 <h3 className="text-4xl font-bold mb-2 text-blue-600">Your Journey as a Reading Volunteer</h3>
                 <p className="text-gray-600">Your path to making an impact</p>
               </div>
-              <Card className="shadow-xl bg-gradient-to-br from-blue-50 to-gray-50 border-0">
+              <Card className="shadow-xl bg-white border-0">
                 <CardContent className="p-12">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     <div className="text-center">
-                      <div className="w-24 h-24 rounded-full border-4 border-orange-500 mx-auto mb-4 flex items-center justify-center bg-white">
+                      <div className="w-24 h-24 rounded-full border-4 border-[#FEB344] mx-auto mb-4 flex items-center justify-center bg-white">
                         <FileText className="h-10 w-10 text-orange-500" strokeWidth={2} />
                       </div>
-                      <div className="text-orange-500 font-bold text-lg mb-2">01 Sign Up</div>
+                      <div className="text-[#FEB344] font-bold text-lg mb-2">01 Sign Up</div>
                       <p className="text-sm text-gray-600">Join a community of change makers passionate about nurturing young readers.</p>
                     </div>
                     <div className="text-center">
-                      <div className="w-24 h-24 rounded-full border-4 border-orange-500 mx-auto mb-4 flex items-center justify-center bg-white">
+                      <div className="w-24 h-24 rounded-full border-4 border-[#FEB344] mx-auto mb-4 flex items-center justify-center bg-white">
                         <Presentation className="h-10 w-10 text-orange-500" strokeWidth={2} />
                       </div>
-                      <div className="text-orange-500 font-bold text-lg mb-2">02 Orientation & Training</div>
+                      <div className="text-[#FEB344] font-bold text-lg mb-2">02 Orientation & Training</div>
                       <p className="text-sm text-gray-600">Get familiar with reading techniques, storytelling tools, and our teaching approach.</p>
                     </div>
                     <div className="text-center">
-                      <div className="w-24 h-24 rounded-full border-4 border-orange-500 mx-auto mb-4 flex items-center justify-center bg-white">
+                      <div className="w-24 h-24 rounded-full border-4 border-[#FEB344] mx-auto mb-4 flex items-center justify-center bg-white">
                         <Users className="h-10 w-10 text-orange-500" strokeWidth={2} />
                       </div>
-                      <div className="text-orange-500 font-bold text-lg mb-2">03 One-On-One Reading Sessions</div>
+                      <div className="text-[#FEB344] font-bold text-lg mb-2">03 One-On-One Reading Sessions</div>
                       <p className="text-sm text-gray-600">Get familiar with reading techniques, storytelling tools, and our teaching approach.</p>
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
                     <div className="text-center">
-                      <div className="w-24 h-24 rounded-full border-4 border-amber-700 mx-auto mb-4 flex items-center justify-center bg-white">
-                        <MessageSquare className="h-10 w-10 text-amber-700" strokeWidth={2} />
+                      <div className="w-24 h-24 rounded-full border-4 border-[#905B0D] mx-auto mb-4 flex items-center justify-center bg-white">
+                        <MessageSquare className="h-10 w-10 text-[#905B0D]" strokeWidth={2} />
                       </div>
-                      <div className="text-amber-700 font-bold text-lg mb-2">04 Feedback Session</div>
+                      <div className="text-[#926218] font-bold text-lg mb-2">04 Feedback Session</div>
                       <p className="text-sm text-gray-600">Share your experiences and help us improve the program for even greater impact.</p>
                     </div>
                     <div className="text-center">
-                      <div className="w-24 h-24 rounded-full border-4 border-amber-700 mx-auto mb-4 flex items-center justify-center bg-white">
-                        <Award className="h-10 w-10 text-amber-700" strokeWidth={2} />
+                      <div className="w-24 h-24 rounded-full border-4 border-[#905B0D] mx-auto mb-4 flex items-center justify-center bg-white">
+                        <Award className="h-10 w-10 text-[#905B0D]" strokeWidth={2} />
                       </div>
-                      <div className="text-amber-700 font-bold text-lg mb-2">05 Certificate Of Contribution</div>
+                      <div className="text-[#926218] font-bold text-lg mb-2">05 Certificate Of Contribution</div>
                       <p className="text-sm text-gray-600">Receive recognition for your commitment and hours of service.</p>
                     </div>
                   </div>

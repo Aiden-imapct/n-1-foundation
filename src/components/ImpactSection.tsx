@@ -75,7 +75,7 @@ const ImpactSection = () => {
             </div>
 
             {/* Right side - Stats Grid */}
-            <div className="flex-1    grid grid-cols-2 gap-8 z-50">
+            <div className="flex-1 grid grid-cols-2 gap-8 z-50">
               {stats.map((stat, index) => (
                 <Card
                   key={index}
