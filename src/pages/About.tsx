@@ -182,48 +182,55 @@ const About = () => {
         {/* Vision & Mission */}
         <section className="pt-8 pb-12">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-12">
-              <Card className="border-l-4 border-l-primary shadow-lg">
-                <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <Eye className="h-8 w-8 text-primary" />
-                    <CardTitle className="text-2xl">Our Vision</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-lg leading-relaxed text-muted-foreground">
-                    A society where every child has access to joyful learning,
-                    and every young mind has the opportunity to better shape
-                    their future.
-                  </p>
-                </CardContent>
-              </Card>
+            <div className="max-w-6xl mx-auto ">
+              <div className="grid lg:grid-cols-2 gap-8">
+                <Card className="shadow-lg rounded-3xl">
+                  <CardHeader className="p-8 pb-6">
+                    <div className="flex items-start flex-col gap-2">
+                      <Eye className="h-8 w-8 text-primary" />
+                      <CardTitle className="text-base xl:text-xl 2xl:text-2xl [min-width:1728px]:text-3xl">
+                        Our Vision
+                      </CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="p-8  pt-0">
+                    <p className="text-[clamp(13px,0.92vw,16px)]  font-poppins leading-relaxed text-black">
+                      A society where every child has access to joyful learning,
+                      and every young mind has the opportunity to better shape
+                      their future.
+                    </p>
+                  </CardContent>
+                </Card>
 
-              <Card className="border-l-4 border-l-secondary shadow-lg">
-                <CardHeader>
-                  <div className="flex items-center space-x-3">
-                    <Target className="h-8 w-8 text-secondary" />
-                    <CardTitle className="text-2xl">Our Mission</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      Bridge literacy gaps through volunteer and community
-                      involvement
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      Inspire youth to design solutions for rural challenges
-                    </li>
-                    <li className="flex items-start">
-                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                      Build ecosystems of empathy, innovation, and partnerships
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+                <Card className="shadow-lg rounded-3xl">
+                  <CardHeader className="p-8 pb-6">
+                    <div className="flex items-start flex-col gap-2">
+                      <Target className="h-8 w-8 text-secondary" />
+                      <CardTitle className="text-base xl:text-xl 2xl:text-2xl [min-width:1728px]:text-3xl">
+                        Our Mission
+                      </CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="p-8 pt-0 space-y-4">
+                    <ul className="space-y-3 text-black text-[clamp(13px,0.92vw,16px)] font-poppins list-disc list-inside pl-3">
+                      <li className="flex items-start  [display:list-item]">
+                        {/* <span className="w-2 h-2 bg-black rounded-full mt-2 mr-3 flex-shrink-0"></span> */}
+                        Bridge literacy gaps through volunteer and community
+                        involvement
+                      </li>
+                      <li className="flex items-start [display:list-item]">
+                        {/* <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span> */}
+                        Inspire youth to design solutions for rural challenges
+                      </li>
+                      <li className="flex items-start [display:list-item]">
+                        {/* <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span> */}
+                        Build ecosystems of empathy, innovation, and
+                        partnerships
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </section>
@@ -257,7 +264,6 @@ const About = () => {
                 return (
                   <div key={index} className="group">
                     <div className="relative rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 aspect-[3/4]">
-                      
                       <img
                         src={member.image}
                         alt={member.name}
@@ -280,10 +286,10 @@ const About = () => {
         </section>
 
         {/* Core Values */}
-        <section className="py-20 bg-[#FEFBF1]">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto flex gap-14">
-              <div className="mb-16 whitespace-nowrap">
+        <section className="py-12 bg-[#FEFBF1]">
+          {/* <div className="container mx-auto px-4 sm:px-6 lg:px-8"> */}
+            <div className="mx-auto max-w-[1284px] flex gap-[80px]">
+              <div className="mb-16 pr-12">
                 <h2 className="text-3xl sm:text-4xl lg:text-[55px] lg:leading-[80px] font-dm-serif font-normal">
                   <span className="text-[#FEB344]">Our Core </span>
                   <span className="text-[#FEB344] italic">Values</span>
@@ -293,19 +299,19 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-8">
+              <div className="flex-1 grid grid-cols-2 gap-8">
                 {/* Empathy */}
                 <Card className="bg-white hover:shadow-xl transition-all duration-300 border-none shadow-md">
                   <CardHeader className="text-center pb-2">
                     <div className="flex justify-center mb-[10px]">
                       <Heart className="h-[32px] w-[32px] text-pink-500" />
                     </div>
-                    <CardTitle className="text-[28px] font-semibold text-black">
+                    <CardTitle className="text-[24px] xl:text-[26px] 2xl:text-[28px] font-semibold text-black">
                       Empathy
                     </CardTitle>
                   </CardHeader>
                   <CardContent className="text-center font-poppins ">
-                    <p className="text-[#494949] font-poppins text-sm">
+                    <p className="text-[#494949] font-poppins text-xs xl:text-[13px] 2xl:text-sm">
                       Listening And Responding To Community Needs With
                       Compassion And Understanding.
                     </p>
@@ -366,37 +372,65 @@ const About = () => {
                 </Card>
               </div>
             </div>
-          </div>
+          {/* </div> */}
         </section>
 
         {/* Awards & Recognition + Legal */}
-        <section className="relative py-20 bg-[#3A86FF] overflow-hidden">
+        <section className="relative py-20 pt-36 flex items-center bg-[#3A86FF] overflow-hidden">
           <WaveDecoration position="top" />
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
               {/* Awards & Recognition Card */}
-              <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl p-8 shadow-xl text-white">
-                <h2 className="text-2xl font-semibold mb-6">
+              <div className="bg-[#5697FFC7] border-[1px] border-[#80C6F9] rounded-3xl p-8 shadow-xl text-white">
+                <div className="mb-4">
+                  <svg
+                 className="w-20 h-20 text-white"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img" aria-label="Awards & Recognition"
+                  >
+                    <path
+                      d="M18.6489 29.1291C18.6489 34.7329 20.875 40.1072 24.8374 44.0697C28.7999 48.0321 34.1742 50.2582 39.778 50.2582C45.3818 50.2582 50.7561 48.0321 54.7185 44.0697C58.681 40.1072 60.9071 34.7329 60.9071 29.1291C60.9071 23.5253 58.681 18.1511 54.7185 14.1886C50.7561 10.2261 45.3818 8 39.778 8C34.1742 8 28.7999 10.2261 24.8374 14.1886C20.875 18.1511 18.6489 23.5253 18.6489 29.1291Z"
+                      stroke="white"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M39.778 50.2579L51.7512 70.9997L57.3786 59.6146L70.049 60.4316L58.0759 39.6934M21.4732 39.6934L9.5 60.4351L22.1704 59.6146L27.7978 70.9962L39.771 50.2579"
+                      stroke="white"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </div>
+
+                <h2 className="text-base xl:text-xl 2xl:text-2xl [min-width:1728px]:text-3xl font-semibold mb-6">
                   Awards & Recognition
                 </h2>
-                <ul className="space-y-2 font-poppins">
-                  <li className="flex items-start">
-                    <span className="mr-3 mt-1 flex-shrink-0">✓</span>
-                    <span className="text-sm font-medium">
+                <ul
+                  className="space-y-2 font-poppins  text-[clamp(13px,0.92vw,16px)] ml-4 list-disc list-outside
+               marker:content-['✓']  marker:font-medium"
+                >
+                  <li className="flex items-start [display:list-item]">
+                    {/* <span className="mr-3 mt-1 flex-shrink-0">✓</span> */}
+                    <span className="pl-2  text-xs xl:text-[13px] 2xl:text-sm font-medium">
                       Recognized By State Education Boards For Literacy
                       Promotion
                     </span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="mr-3 mt-1 flex-shrink-0">✓</span>
-                    <span className="text-sm font-medium">
+                  <li className="flex items-start [display:list-item]">
+                    {/* <span className="mr-3 mt-1 flex-shrink-0">✓</span> */}
+                    <span className="pl-2 text-xs xl:text-[13px] 2xl:text-sm font-medium">
                       Featured At CSR Forums For Innovative Volunteer-Driven
                       Models
                     </span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="mr-3 mt-1 flex-shrink-0">✓</span>
-                    <span className="text-sm font-medium">
+                  <li className="flex items-start [display:list-item]">
+                    {/* <span className="mr-3 mt-1 flex-shrink-0">✓</span> */}
+                    <span className="pl-2  text-xs xl:text-[13px] 2xl:text-sm font-medium">
                       Community Appreciation Awards From Schools And Local
                       Bodies
                     </span>
@@ -405,31 +439,54 @@ const About = () => {
               </div>
 
               {/* Legal & Financial Transparency Card */}
-              <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl p-8 shadow-xl text-white">
-                <h2 className="text-2xl font-semibold mb-6">
+              <div className="bg-[#5697FFC7] border-[1px] border-[#80C6F9] rounded-3xl p-8 shadow-xl text-white">
+                <div className="mb-4">
+                  <svg
+                   className="w-20 h-20 text-white"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img" aria-label="Legal and financial transparency"
+                  >
+                    <path
+                      d="M38.61 40.8897C42.1267 44.4063 46.76 47.9797 46.76 47.9797L53.11 41.6297C53.11 41.6297 49.5367 36.9963 46.02 33.4797C42.5033 29.963 37.87 26.3897 37.87 26.3897L31.52 32.7397C31.52 32.7397 35.0933 37.373 38.61 40.8897ZM38.61 40.8897L27.5 51.9997M54.1667 40.5697L45.7 49.0363M38.9333 25.333L30.4667 33.7997"
+                      stroke="white"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M70.5 37.61V27.9333C70.5 22.4667 70.5 19.7333 69.1533 17.95C67.8067 16.1667 64.76 15.3033 58.67 13.57C54.9968 12.515 51.4005 11.2086 47.9067 9.66C43.91 7.88667 41.9133 7 40.5 7C39.0867 7 37.09 7.88667 33.0933 9.66C30.16 10.96 26.4933 12.3867 22.33 13.57C16.24 15.3033 13.1967 16.17 11.8467 17.95C10.5 19.7333 10.5 22.4667 10.5 27.9333V37.61C10.5 56.36 27.3767 67.61 35.8133 72.0633C37.8367 73.13 38.8467 73.6667 40.5 73.6667C42.1533 73.6667 43.1633 73.1333 45.1867 72.0667C53.6233 67.6067 70.5 56.36 70.5 37.61Z"
+                      stroke="white"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <h2 className="text-base xl:text-xl 2xl:text-2xl [min-width:1728px]:text-3xl font-semibold mb-6">
                   Legal & Financial Transparency
                 </h2>
-                <ul className="space-y-2 font-poppins">
-                  <li className="flex items-start">
-                    <span className="mr-3 mt-1 flex-shrink-0">•</span>
+                <ul className="space-y-2 font-poppins list-disc text-[clamp(13px,0.92vw,16px)] ml-6">
+                  <li className="flex items-start [display:list-item]">
+                    {/* <span className="mr-3 mt-1 flex-shrink-0">•</span> */}
                     <span className="text-sm font-medium">
                       Registered Under The Societies Registration Act
                     </span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="mr-3 mt-1 flex-shrink-0">•</span>
+                  <li className="flex items-start [display:list-item]">
+                    {/* <span className="mr-3 mt-1 flex-shrink-0">•</span> */}
                     <span className="text-sm font-medium">
                       Certified Under 80G And 12A - Donors Enjoy Tax Exemptions
                     </span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="mr-3 mt-1 flex-shrink-0">•</span>
+                  <li className="flex items-start [display:list-item]">
+                    {/* <span className="mr-3 mt-1 flex-shrink-0">•</span> */}
                     <span className="text-sm font-medium">
                       Annual Independent Audits Conducted
                     </span>
                   </li>
-                  <li className="flex items-start">
-                    <span className="mr-3 mt-1 flex-shrink-0">•</span>
+                  <li className="flex items-start [display:list-item]">
+                    {/* <span className="mr-3 mt-1 flex-shrink-0">•</span> */}
                     <span className="text-sm font-medium">
                       Financial And Impact Reports Publicly Available
                     </span>
