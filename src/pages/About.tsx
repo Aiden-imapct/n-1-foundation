@@ -14,14 +14,9 @@ import {
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import rahulImg from "@/assets/team/rahul.jpg";
-import amodImg from "@/assets/team/amod.jpg";
-import gauriImg from "@/assets/team/gauri.jpg";
-import anjaliImg from "@/assets/team/anjali.jpg";
-import pallaviImg from "@/assets/team/pallavi.jpg";
-import vinayakImg from "@/assets/team/vinayak.jpg";
-import ankitaImg from "@/assets/team/ankita.jpg";
-import varshaImg from "@/assets/team/varsha.jpg";
+import rahulImg from "@/assets/team/Rahul.jpg";
+import amodImg from "@/assets/team/Amod.png";
+import gauriImg from "@/assets/team/Gauri.png";
 import aboutHero from "@/assets/about-hero.png";
 import butterflyLifecycle from "@/assets/butterfly-lifecycle.png";
 import logo from "@/assets/logo-short.png";
@@ -63,47 +58,24 @@ const About = () => {
     "Community appreciation awards from schools and local bodies",
   ];
   const teamMembers = [
-    {
-      name: "Rahul Pathak",
-      image: rahulImg,
-      initials: "RP",
-    },
+  
     {
       name: "Amod Joshi",
       image: amodImg,
       initials: "AJ",
+    },
+      {
+      name: "Rahul Pathak",
+      image: rahulImg,
+      initials: "RP",
     },
     {
       name: "Gauri Mehendale",
       image: gauriImg,
       initials: "GM",
     },
-    {
-      name: "Anjali Desai",
-      image: anjaliImg,
-      initials: "AD",
-    },
-    {
-      name: "Pallavi Paranjape",
-      image: pallaviImg,
-      initials: "PP",
-    },
-    {
-      name: "Vinayak Deo",
-      image: vinayakImg,
-      initials: "VD",
-    },
-    {
-      name: "Ankita Pujari",
-      image: ankitaImg,
-      initials: "AP",
-    },
-    {
-      name: "Varsha Dhodi",
-      image: varshaImg,
-      initials: "VD",
-    },
-  ];
+  
+    ];
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -253,7 +225,7 @@ const About = () => {
               className="grid  grid-cols-1 
   sm:grid-cols-2 
   lg:grid-cols-3 
-  2xl:grid-cols-4 gap-12 max-w-5xl mx-auto"
+  2xl:grid-cols-3 gap-12 max-w-5xl mx-auto"
             >
               {teamMembers.map((member, index) => {
                 // Alternate gradient colors: blue and orange
@@ -267,7 +239,7 @@ const About = () => {
                       <img
                         src={member.image}
                         alt={member.name}
-                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
+                        className="w-full h-full object-cover grayscale"
                       />
                       {/* Gradient overlay at bottom */}
                       <div
@@ -376,13 +348,11 @@ const About = () => {
         </section>
 
         {/* Awards & Recognition + Legal */}
-        <section className="relative py-20 pt-36 flex items-center bg-[#3A86FF] overflow-hidden">
+        <section className="relative py-20  flex items-center bg-[#3A86FF] overflow-hidden">
           <WaveDecoration position="top" />
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
-              {/* Awards & Recognition Card */}
-              <div className="bg-[#5697FFC7] border-[1px] border-[#80C6F9] rounded-3xl p-8 shadow-xl text-white">
-                <div className="mb-4">
+          <div className="flex items-center justify-center my-12">
+          
                   <svg
                  className="w-20 h-20 text-white"
                     viewBox="0 0 80 80"
@@ -405,7 +375,33 @@ const About = () => {
                       stroke-linejoin="round"
                     />
                   </svg>
-                </div>
+                    <svg
+                   className="w-20 h-20 text-white"
+                    viewBox="0 0 80 80"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    role="img" aria-label="Legal and financial transparency"
+                  >
+                    <path
+                      d="M38.61 40.8897C42.1267 44.4063 46.76 47.9797 46.76 47.9797L53.11 41.6297C53.11 41.6297 49.5367 36.9963 46.02 33.4797C42.5033 29.963 37.87 26.3897 37.87 26.3897L31.52 32.7397C31.52 32.7397 35.0933 37.373 38.61 40.8897ZM38.61 40.8897L27.5 51.9997M54.1667 40.5697L45.7 49.0363M38.9333 25.333L30.4667 33.7997"
+                      stroke="white"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M70.5 37.61V27.9333C70.5 22.4667 70.5 19.7333 69.1533 17.95C67.8067 16.1667 64.76 15.3033 58.67 13.57C54.9968 12.515 51.4005 11.2086 47.9067 9.66C43.91 7.88667 41.9133 7 40.5 7C39.0867 7 37.09 7.88667 33.0933 9.66C30.16 10.96 26.4933 12.3867 22.33 13.57C16.24 15.3033 13.1967 16.17 11.8467 17.95C10.5 19.7333 10.5 22.4667 10.5 27.9333V37.61C10.5 56.36 27.3767 67.61 35.8133 72.0633C37.8367 73.13 38.8467 73.6667 40.5 73.6667C42.1533 73.6667 43.1633 73.1333 45.1867 72.0667C53.6233 67.6067 70.5 56.36 70.5 37.61Z"
+                      stroke="white"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                
+          </div>
+            <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              {/* Awards & Recognition Card */}
+              <div className="bg-[#5697FFC7] border-[1px] border-[#80C6F9] rounded-3xl p-8 shadow-xl text-white">
+                
 
                 <h2 className="text-base xl:text-xl 2xl:text-2xl [min-width:1728px]:text-3xl font-semibold mb-6">
                   Awards & Recognition
@@ -441,27 +437,7 @@ const About = () => {
               {/* Legal & Financial Transparency Card */}
               <div className="bg-[#5697FFC7] border-[1px] border-[#80C6F9] rounded-3xl p-8 shadow-xl text-white">
                 <div className="mb-4">
-                  <svg
-                   className="w-20 h-20 text-white"
-                    viewBox="0 0 80 80"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    role="img" aria-label="Legal and financial transparency"
-                  >
-                    <path
-                      d="M38.61 40.8897C42.1267 44.4063 46.76 47.9797 46.76 47.9797L53.11 41.6297C53.11 41.6297 49.5367 36.9963 46.02 33.4797C42.5033 29.963 37.87 26.3897 37.87 26.3897L31.52 32.7397C31.52 32.7397 35.0933 37.373 38.61 40.8897ZM38.61 40.8897L27.5 51.9997M54.1667 40.5697L45.7 49.0363M38.9333 25.333L30.4667 33.7997"
-                      stroke="white"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M70.5 37.61V27.9333C70.5 22.4667 70.5 19.7333 69.1533 17.95C67.8067 16.1667 64.76 15.3033 58.67 13.57C54.9968 12.515 51.4005 11.2086 47.9067 9.66C43.91 7.88667 41.9133 7 40.5 7C39.0867 7 37.09 7.88667 33.0933 9.66C30.16 10.96 26.4933 12.3867 22.33 13.57C16.24 15.3033 13.1967 16.17 11.8467 17.95C10.5 19.7333 10.5 22.4667 10.5 27.9333V37.61C10.5 56.36 27.3767 67.61 35.8133 72.0633C37.8367 73.13 38.8467 73.6667 40.5 73.6667C42.1533 73.6667 43.1633 73.1333 45.1867 72.0667C53.6233 67.6067 70.5 56.36 70.5 37.61Z"
-                      stroke="white"
-                      stroke-width="3"
-                      stroke-linecap="round"
-                    />
-                  </svg>
+                
                 </div>
                 <h2 className="text-base xl:text-xl 2xl:text-2xl [min-width:1728px]:text-3xl font-semibold mb-6">
                   Legal & Financial Transparency
