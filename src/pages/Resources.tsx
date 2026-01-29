@@ -61,7 +61,7 @@ const Resources = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[85vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[84vh] flex items-center overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <img 
