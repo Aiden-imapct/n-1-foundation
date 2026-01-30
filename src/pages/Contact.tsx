@@ -19,7 +19,7 @@ const Contact = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[87vh] overflow-hidden">
+        <section className="relative min-h-[90vh] overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <img
@@ -27,10 +27,13 @@ const Contact = () => {
               alt="School children"
               className="w-full h-full object-cover object-top"
             />
+            {/* Stronger Dark Gradient Overlay at Bottom (Tailwind only) */}
+            <div
+              className="absolute bottom-0 left-0 w-full h-1/2 z-[2] pointer-events-none bg-gradient-to-b from-transparent to-black/90"
+            />
           </div>
 
-          {/* Dark Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/50 to-black/80 z-[1]" />
+         
 
           {/* Wave Decoration at Bottom */}
           <div className="absolute bottom-0 left-0 right-0 z-[2]">

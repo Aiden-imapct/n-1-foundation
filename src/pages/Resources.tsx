@@ -4,11 +4,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WaveDecoration from "@/components/WaveDecoration";
-import threeStudents from "@/assets/gallery/three-students-blackboard.jpg";
-import schoolGroup from "@/assets/gallery/school-group-photo.jpg";
 import studentsOutdoor from "@/assets/gallery/students-outdoor-learning.jpg";
 import volunteerTeaching from "@/assets/gallery/volunteer-teaching.jpg";
 import studentsLearning from "@/assets/gallery/students-learning.jpg";
+import resource from "@/assets/resource.jpg";
 
 const Resources = () => {
   const annualReports = [
@@ -61,18 +60,21 @@ const Resources = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[85vh] overflow-hidden">
+        <section className="relative min-h-[90vh] overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <img
-              src={threeStudents}
+              src={resource}
               alt="Three students at blackboard"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
+            />
+            <div className="absolute inset-0 bg-black/40 z-[1]" />
+            {/* Stronger Dark Gradient Overlay at Bottom (Tailwind only) */}
+            <div
+              className="absolute bottom-0 left-0 w-full h-1/2 z-[2] pointer-events-none bg-gradient-to-b from-transparent to-black/90"
             />
           </div>
 
-          {/* Dark Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/30 to-black/60 z-[1]"></div>
 
           {/* Wave Decoration at Bottom */}
           <div className="absolute bottom-0 left-0 right-0 z-[2]">

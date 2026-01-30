@@ -13,7 +13,7 @@ import WaveDecoration from "@/components/WaveDecoration";
 import { Heart, Shield, Users, BookOpen, Calculator, CreditCard, Smartphone, Building } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 // import schoolGroup from "@/assets/gallery/school-group-photo.jpg";
-import donatechildren from "@/assets/donate-children.jpg";
+import donatechildren from "@/assets/donate.jpg";
 import smilingStudent from "@/assets/gallery/smiling-student-notebook.jpg";
 
 const Donate = () => {
@@ -40,29 +40,32 @@ const Donate = () => {
 
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[85vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[90vh] flex items-center overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <img
               src={donatechildren}
               alt="School group photo"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-top"
+            />
+
+            {/* Dark Overlay */}
+            <div className="absolute inset-0 bg-black/40 z-[1]" />
+            {/* Stronger Dark Gradient Overlay at Bottom (Tailwind only) */}
+            <div
+              className="absolute bottom-0 left-0 w-full h-1/2 z-[2] pointer-events-none bg-gradient-to-b from-transparent to-black/90"
             />
           </div>
 
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/40 z-[1]"></div>
-
+          <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-black/70 via-black/30 to-transparent z-[2]" />
           {/* Wave Decoration at Bottom */}
           <WaveDecoration position="bottom" />
-
           {/* Content */}
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-64">
             <div className="max-w-4xl mx-auto text-center space-y-4">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-dm-serif font-normal leading-tight text-yellow-500 animate-fade-in">
                 Thank you for your willingness to give!
               </h1>
-
               <p className="text-base sm:text-lg lg:text-xl text-white italic leading-relaxed max-w-3xl mx-auto">
                 Donation options will go live soon. 80G certification currently in progress
               </p>
