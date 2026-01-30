@@ -9,6 +9,16 @@ import WaveDecoration from "@/components/WaveDecoration";
 import studentsOutdoor from "@/assets/gallery/students-outdoor-learning.jpg";
 import threeStudents from "@/assets/gallery/three-students-blackboard.jpg";
 import schoolGroup from "@/assets/gallery/school-group-photo.jpg";
+import checkTicks from "@/assets/check-ticks.png";
+import blueRibbon from "@/assets/blue-ribbon.png";
+import pinkRibbon from "@/assets/pink-ribbon.png";
+
+const scrollToSection = (id) => {
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: "smooth" });
+  }
+};
 
 const Programs = () => {
   const readAStoryFeatures = [
@@ -46,7 +56,7 @@ const Programs = () => {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[70vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[84vh] flex items-center overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
             <img 
@@ -63,21 +73,47 @@ const Programs = () => {
           <WaveDecoration position="bottom" />
           
           {/* Content */}
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-display font-bold leading-tight text-white animate-fade-in">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-38 sm:pt-42 lg:pt-48">
+          <div className="max-w-6xl mx-auto text-center space-y-8">
+
+            {/* One-line Title + Subtitle */}
+            <h1 className="flex flex-wrap justify-center items-center gap-x-4 gap-y-2 
+                          text-5xl sm:text-6xl lg:text-7xl font-display font-bold 
+                          leading-tight text-yellow-500 animate-fade-in">
+              <span>
                 One Story. One <span className="italic">Idea</span>. One Action.
-              </h1>
-              
-              <p className="text-lg sm:text-xl lg:text-2xl text-white/95 leading-relaxed max-w-3xl mx-auto">
+              </span>
+              <span className="text-lg sm:text-xl lg:text-2xl font-normal text-white/95">
                 Our flagship programs combine community-led action with innovative approaches to create lasting educational impact
-              </p>
+              </span>
+            </h1>
+
+            {/* Buttons */}
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Button
+                size="lg"
+                onClick={()=>scrollToSection("read-a-story")}
+                className="rounded-xl bg-purple-600 border-2 border-white text-white hover:bg-purple-700 px-8"
+              >
+                Read-a-story
+              </Button>
+
+              <Button
+                size="lg"
+                onClick={()=>scrollToSection("solve-with-bharat")}
+                className="rounded-xl bg-teal-500 border-2 border-teal-800 text-white hover:bg-teal-600 px-8"
+              >
+                Solve-with-bharat
+              </Button>
             </div>
+
           </div>
+        </div>
+
         </section>
 
         {/* Read-a-Story Program */}
-        <section className="py-20 bg-amber-50">
+        <section id="read-a-story" className="py-20 bg-amber-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header Section */}
             <div className="text-center max-w-3xl mx-auto mb-12">
@@ -86,7 +122,7 @@ const Programs = () => {
                   <BookOpen className="h-12 w-12 text-orange-500" strokeWidth={2.5} />
                 </div>
               </div>
-              <h2 className="text-4xl font-display font-bold mb-4 text-orange-500">Read-a-Story</h2>
+              <h2 className="text-4xl font-display font-bold mb-4 text-yellow-500">Read-a-Story</h2>
               <p className="text-lg text-gray-700 leading-relaxed">
                 A volunteer-driven literacy initiative bringing<br />books and imagination to marginalized children
               </p>
@@ -168,12 +204,12 @@ const Programs = () => {
             </div>
 
             {/* Volunteer Journey Section */}
-            <div className="max-w-5xl mx-auto">
+            <div className="mx-auto bg-white w-[120%] -mx-[10%] py-16">
               <div className="text-center mb-8">
                 <h3 className="text-4xl font-bold mb-2 text-blue-600">Your Journey as a Reading Volunteer</h3>
                 <p className="text-gray-600">Your path to making an impact</p>
               </div>
-              <Card className="shadow-xl bg-white border-0">
+              <Card className="shadow-2xl bg-white border-0 w-[70%] mx-[18%]">
                 <CardContent className="p-12">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     <div className="text-center">
@@ -219,13 +255,16 @@ const Programs = () => {
             </div>
           </div>
         </section>
+        
+        {/* <div className="bg-amber-50 w-full"><img src={blueRibbon} alt="Blue Ribbon" className="bg-amber-50 w-[25%] max-w-sm mb-10 mx-[10%] mt-2 mb-4 z-50"/></div> */}
+        
 
 
         {/* Solve-with-Bharat Program */}
-        <section className="py-20 bg-amber-50">
+        <section id="solve-with-bharat" className="bg-amber-50">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header Section */}
-            <div className="text-center max-w-3xl mx-auto mb-12">
+            <div className="text-center max-w-3xl mx-auto">
               <div className="flex justify-center mb-6">
                 <div className="p-4 rounded-full bg-blue-100">
                   <Calculator className="h-12 w-12 text-blue-600" />
@@ -311,12 +350,12 @@ const Programs = () => {
             </div>
 
             {/* Math Mentor Journey Section */}
-            <div className="max-w-5xl mx-auto">
+            <div className="mx-auto bg-white py-16 w-[120%] -mx-[10%]">
               <div className="text-center mb-8">
                 <h3 className="text-4xl font-bold mb-2 text-orange-500">Your Journey as a Math Mentor</h3>
                 <p className="text-gray-600">Your path to making an impact</p>
               </div>
-              <Card className="shadow-xl bg-gradient-to-br from-blue-50 to-gray-50 border-0">
+              <Card className="shadow-2xl bg-gradient-to-br from-blue-50 to-gray-50 border-0 w-[70%] mx-[15%]">
                 <CardContent className="p-12">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     <div className="text-center">
@@ -363,21 +402,25 @@ const Programs = () => {
           </div>
         </section>
 
+        
+
         {/* Call to Action Section */}
         <section className="py-20 bg-blue-600 relative overflow-hidden">
           {/* Decorative curved patterns */}
-          <svg className="absolute left-0 top-1/2 -translate-y-1/2 w-48 h-48" viewBox="0 0 200 200">
+          <WaveDecoration position="top" />
+          <img src={pinkRibbon} alt="Pink Ribbon" className="absolute left-0 top-1/2 -translate-y-1/2 w-38 h-38" />
+          {/* <svg className="absolute left-0 top-1/2 -translate-y-1/2 w-48 h-48" viewBox="0 0 200 200">
             <path d="M 0,100 Q 50,50 100,100 T 200,100" fill="none" stroke="#ef4444" strokeWidth="3" opacity="0.3"/>
             <path d="M 0,120 Q 50,70 100,120 T 200,120" fill="none" stroke="#ec4899" strokeWidth="3" opacity="0.3"/>
             <path d="M 0,140 Q 50,90 100,140 T 200,140" fill="none" stroke="#f97316" strokeWidth="3" opacity="0.3"/>
-          </svg>
-          <svg className="absolute right-0 top-1/2 -translate-y-1/2 w-48 h-48" viewBox="0 0 200 200">
+          </svg> */}
+          {/* <svg className="absolute right-0 top-1/2 -translate-y-1/2 w-48 h-48" viewBox="0 0 200 200">
             <path d="M 0,100 Q 50,50 100,100 T 200,100" fill="none" stroke="#10b981" strokeWidth="3" opacity="0.3"/>
             <path d="M 0,120 Q 50,70 100,120 T 200,120" fill="none" stroke="#14b8a6" strokeWidth="3" opacity="0.3"/>
             <path d="M 0,140 Q 50,90 100,140 T 200,140" fill="none" stroke="#22c55e" strokeWidth="3" opacity="0.3"/>
-          </svg>
+          </svg> */}
           
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 relative z-50">
             <div className="text-center max-w-3xl mx-auto">
               <div className="flex justify-center mb-6">
                 <div className="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center">
