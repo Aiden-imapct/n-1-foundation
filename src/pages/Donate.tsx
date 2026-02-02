@@ -12,7 +12,8 @@ import Footer from "@/components/Footer";
 import WaveDecoration from "@/components/WaveDecoration";
 import { Heart, Shield, Users, BookOpen, Calculator, CreditCard, Smartphone, Building } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import schoolGroup from "@/assets/gallery/school-group-photo.jpg";
+// import schoolGroup from "@/assets/gallery/school-group-photo.jpg";
+import donatechildren from "@/assets/donate.jpg";
 import smilingStudent from "@/assets/gallery/smiling-student-notebook.jpg";
 
 const Donate = () => {
@@ -36,34 +37,37 @@ const Donate = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <main>
         {/* Hero Section */}
-        <section className="relative min-h-[85vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[90vh] flex items-center overflow-hidden">
           {/* Background Image */}
           <div className="absolute inset-0 z-0">
-            <img 
-              src={schoolGroup} 
-              alt="School group photo" 
-              className="w-full h-full object-cover"
+            <img
+              src={donatechildren}
+              alt="School group photo"
+              className="w-full h-full object-cover object-top"
+            />
+
+            {/* Dark Overlay */}
+            <div className="absolute inset-0 bg-black/40 z-[1]" />
+            {/* Stronger Dark Gradient Overlay at Bottom (Tailwind only) */}
+            <div
+              className="absolute bottom-0 left-0 w-full h-1/2 z-[2] pointer-events-none bg-gradient-to-b from-transparent to-black/90"
             />
           </div>
-          
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/40 z-[1]"></div>
-          
+
+          <div className="absolute inset-x-0 bottom-0 h-48 bg-gradient-to-t from-black/70 via-black/30 to-transparent z-[2]" />
           {/* Wave Decoration at Bottom */}
           <WaveDecoration position="bottom" />
-          
           {/* Content */}
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="max-w-4xl mx-auto text-center space-y-8">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-white animate-fade-in">
-                One <span className="italic font-serif">Gift</span>. One <span className="italic font-serif">Impact</span>. One <span className="italic font-serif">Future</span>.
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 pt-64">
+            <div className="max-w-4xl mx-auto text-center space-y-4">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-dm-serif font-normal leading-tight text-yellow-500 animate-fade-in">
+                Thank you for your willingness to give!
               </h1>
-              
-              <p className="text-lg sm:text-xl lg:text-2xl text-white leading-relaxed max-w-3xl mx-auto">
-                Your donation helps us provide quality education and build stronger communities across India
+              <p className="text-base sm:text-lg lg:text-xl text-white italic leading-relaxed max-w-3xl mx-auto">
+                Donation options will go live soon. 80G certification currently in progress
               </p>
             </div>
           </div>
@@ -83,8 +87,8 @@ const Donate = () => {
                 {/* Donation Type */}
                 <div>
                   <Label className="text-base font-semibold mb-4 block">Donation Type</Label>
-                  <RadioGroup 
-                    value={donationType} 
+                  <RadioGroup
+                    value={donationType}
                     onValueChange={(value) => setDonationType(value as "one-time" | "monthly")}
                     className="grid grid-cols-2 gap-4"
                   >
@@ -192,8 +196,8 @@ const Donate = () => {
                 {/* Optional Message */}
                 <div>
                   <Label htmlFor="message">Message (Optional)</Label>
-                  <Textarea 
-                    id="message" 
+                  <Textarea
+                    id="message"
                     placeholder="Share why you're supporting us or any special instructions"
                     rows={3}
                   />
@@ -202,8 +206,8 @@ const Donate = () => {
                 {/* Preferences */}
                 <div className="space-y-3">
                   <div className="flex items-center space-x-2">
-                    <Checkbox 
-                      id="anonymous" 
+                    <Checkbox
+                      id="anonymous"
                       checked={isAnonymous}
                       onCheckedChange={(checked) => setIsAnonymous(checked as boolean)}
                     />
@@ -231,14 +235,14 @@ const Donate = () => {
                   <div className="text-sm">
                     <div className="font-semibold text-green-600 mb-1">Secure Payment</div>
                     <div className="text-muted-foreground">
-                      Your donation is processed through secure, encrypted payment gateways. 
+                      Your donation is processed through secure, encrypted payment gateways.
                       All transactions are protected and confidential.
                     </div>
                   </div>
                 </div>
 
                 {/* Donate Button */}
-                <Button 
+                <Button
                   onClick={handleDonate}
                   className="w-full h-12 text-lg bg-primary hover:bg-primary/90"
                 >
@@ -247,7 +251,7 @@ const Donate = () => {
 
                 {/* Tax Benefit Info */}
                 <div className="text-center text-sm text-muted-foreground p-4 bg-blue-50 dark:bg-blue-950/20 rounded-lg">
-                  <strong>Tax Benefit:</strong> Donations to n+1 Social Foundation are eligible for 
+                  <strong>Tax Benefit:</strong> Donations to n+1 Social Foundation are eligible for
                   80G tax deduction under Income Tax Act. You'll receive a tax receipt via email.
                 </div>
               </CardContent>
@@ -270,7 +274,7 @@ const Donate = () => {
                   </div>
                 </CardContent>
               </Card>
-              
+
               <Card className="text-center">
                 <CardContent className="pt-6">
                   <div className="text-4xl font-bold text-primary mb-2">₹500</div>
@@ -281,7 +285,7 @@ const Donate = () => {
                   </div>
                 </CardContent>
               </Card>
-              
+
               <Card className="text-center">
                 <CardContent className="pt-6">
                   <div className="text-4xl font-bold text-primary mb-2">₹2500</div>
