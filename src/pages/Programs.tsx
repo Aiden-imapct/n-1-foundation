@@ -204,7 +204,7 @@ const Programs = () => {
             </div>
 
             {/* Volunteer Journey Section */}
-            <div className="bg-white w-[110%] -mx-[5%] py-16">
+            <div className="bg-white w-[110%] -mx-[7%] py-16">
               <div className="text-center mb-8">
                 <h3 className="text-4xl font-bold mb-2 text-blue-600">Your Journey as a Reading Volunteer</h3>
                 <p className="text-gray-600">Your path to making an impact</p>
@@ -261,10 +261,10 @@ const Programs = () => {
 
 
         {/* Solve-with-Bharat Program */}
-        <section id="solve-with-bharat" className="bg-amber-50">
+        <section id="solve-with-bharat" className="bg-amber-50 pt-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {/* Header Section */}
-            <div className="text-center max-w-3xl mx-auto">
+            <div className="text-center max-w-3xl mx-auto mb-12">
               <div className="flex justify-center mb-6">
                 <div className="p-4 rounded-full bg-blue-100">
                   <Calculator className="h-12 w-12 text-blue-600" />
@@ -350,12 +350,13 @@ const Programs = () => {
             </div>
 
             {/* Math Mentor Journey Section */}
-            <div className="mx-auto bg-white py-16 w-[110%] -mx-[5%]">
+          <div className="bg-white py-16 w-[110%] -mx-[5%] border-y border-blue-50">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-8">
                 <h3 className="text-4xl font-bold mb-2 text-orange-500">Your Journey as a Math Mentor</h3>
                 <p className="text-gray-600">Your path to making an impact</p>
               </div>
-              <Card className="shadow-2xl bg-gradient-to-br from-blue-50 to-gray-50 border-0 w-[70%] mx-[15%]">
+              <Card className="shadow-2xl bg-gradient-to-br from-blue-50 to-gray-50 border-0 max-w-5xl mx-auto">
                 <CardContent className="p-12">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                     <div className="text-center">
@@ -370,14 +371,14 @@ const Programs = () => {
                         <Presentation className="h-10 w-10 text-blue-600" strokeWidth={2} />
                       </div>
                       <div className="text-blue-600 font-bold text-lg mb-2">02 Orientation & Training</div>
-                      <p className="text-sm text-gray-600">Learn the practice-based model, familiarize yourself with digital and paper tools, and understand student engagement methods.</p>
+                      <p className="text-sm text-gray-600">Learn the practice-based model and digital/paper tools.</p>
                     </div>
                     <div className="text-center">
                       <div className="w-24 h-24 rounded-full border-4 border-blue-600 mx-auto mb-4 flex items-center justify-center bg-white">
                         <Users className="h-10 w-10 text-blue-600" strokeWidth={2} />
                       </div>
-                      <div className="text-blue-600 font-bold text-lg mb-2">03 One-On-One Reading Sessions</div>
-                      <p className="text-sm text-gray-600">Guide students in solving real problems, ensuring conceptual clarity and confidence.</p>
+                      <div className="text-blue-600 font-bold text-lg mb-2">03 Mentoring Sessions</div>
+                      <p className="text-sm text-gray-600">Guide students in solving real problems, ensuring conceptual clarity.</p>
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
@@ -386,7 +387,7 @@ const Programs = () => {
                         <MessageSquare className="h-10 w-10 text-blue-900" strokeWidth={2} />
                       </div>
                       <div className="text-blue-900 font-bold text-lg mb-2">04 Feedback Session</div>
-                      <p className="text-sm text-gray-600">Collaborate with facilitators and teachers to measure learning improvements.</p>
+                      <p className="text-sm text-gray-600">Collaborate with facilitators to measure learning improvements.</p>
                     </div>
                     <div className="text-center">
                       <div className="w-24 h-24 rounded-full border-4 border-blue-900 mx-auto mb-4 flex items-center justify-center bg-white">
@@ -399,6 +400,7 @@ const Programs = () => {
                 </CardContent>
               </Card>
             </div>
+          </div>
           </div>
         </section>
 
