@@ -52,7 +52,7 @@ const Programs = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background overflow-x-hidden">
       <Header />
       <main>
         {/* Hero Section */}
@@ -204,7 +204,7 @@ const Programs = () => {
             </div>
 
             {/* Volunteer Journey Section */}
-            <div className="mx-auto bg-white w-[120%] -mx-[10%] py-16">
+            <div className="bg-white w-[110%] -mx-[5%] py-16">
               <div className="text-center mb-8">
                 <h3 className="text-4xl font-bold mb-2 text-blue-600">Your Journey as a Reading Volunteer</h3>
                 <p className="text-gray-600">Your path to making an impact</p>
@@ -350,7 +350,7 @@ const Programs = () => {
             </div>
 
             {/* Math Mentor Journey Section */}
-            <div className="mx-auto bg-white py-16 w-[120%] -mx-[10%]">
+            <div className="mx-auto bg-white py-16 w-[110%] -mx-[5%]">
               <div className="text-center mb-8">
                 <h3 className="text-4xl font-bold mb-2 text-orange-500">Your Journey as a Math Mentor</h3>
                 <p className="text-gray-600">Your path to making an impact</p>
