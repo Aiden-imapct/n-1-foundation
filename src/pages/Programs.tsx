@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WaveDecoration from "@/components/WaveDecoration";
-import studentsOutdoor from "@/assets/gallery/students-outdoor-learning.jpg";
+import studentsOutdoor from "@/assets/programs-hero.png";
 import threeStudents from "@/assets/gallery/three-students-blackboard.jpg";
 import schoolGroup from "@/assets/gallery/school-group-photo.jpg";
 import checkTicks from "@/assets/check-ticks.png";
@@ -52,9 +52,9 @@ const Programs = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background overflow-x-hidden">
+    <div className="min-h-screen bg-background">
       <Header />
-      <main>
+      <main className="overflow-x-hidden">
         {/* Hero Section */}
         <section className="relative min-h-[84vh] flex items-center overflow-hidden">
           {/* Background Image */}
@@ -130,29 +130,23 @@ const Programs = () => {
 
             {/* Why It Matters + Action Buttons */}
             <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16">
-              <div>
-                <h3 className="text-3xl font-bold text-blue-600 mb-6">Why It Matters?</h3>
+              <div className="mt-8">
+                <h3 className="text-3xl font-bold text-blue-600 mb-8">Why It Matters?</h3>
                 <ul className="space-y-4 mb-8">
-                  <li className="flex items-start">
-                    <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                      <CheckCircle className="h-5 w-5 text-white" fill="currentColor" />
-                    </div>
+                  <li className="flex items-start">                 
+                      <CheckCircle className="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-lg text-gray-700">
                       Builds <span className="italic text-blue-600 font-medium">imagination</span>, <span className="italic text-blue-600 font-medium">vocabulary</span>, and <span className="italic text-blue-600 font-medium">confidence</span>
                     </span>
                   </li>
-                  <li className="flex items-start">
-                    <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                      <CheckCircle className="h-5 w-5 text-white" fill="currentColor" />
-                    </div>
+                  <li className="flex items-start">                   
+                      <CheckCircle className="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-lg text-gray-700">
                       Creates a <span className="italic text-blue-600 font-medium">joyful reading culture</span>
                     </span>
                   </li>
                   <li className="flex items-start">
-                    <div className="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                      <CheckCircle className="h-5 w-5 text-white" fill="currentColor" />
-                    </div>
+                      <CheckCircle className="h-6 w-6 text-blue-600 mr-3 mt-0.5 flex-shrink-0" />
                     <span className="text-lg text-gray-700">
                       Provides an <span className="italic text-blue-600 font-medium">opportunity</span> for a <span className="italic text-blue-600 font-medium">better future</span>
                     </span>
@@ -173,28 +167,28 @@ const Programs = () => {
               {/* Impact Stats Section */}
               <div className="grid grid-cols-2 gap-6">
                 <Card className="text-center shadow-lg bg-white rounded-xl border-0">
-                  <CardContent className="pt-8 pb-8">
+                  <CardContent className="pt-2 pb-2">
                     <BookOpen className="h-10 w-10 text-blue-600 mx-auto mb-4" strokeWidth={2} />
                     <div className="text-4xl font-bold text-gray-900 mb-2">1000+</div>
                     <div className="text-sm text-gray-600">Reading Sessions</div>
                   </CardContent>
                 </Card>
                 <Card className="text-center shadow-lg bg-white rounded-xl border-0">
-                  <CardContent className="pt-8 pb-8">
+                  <CardContent className="pt-2 pb-2">
                     <MapPin className="h-10 w-10 text-green-600 mx-auto mb-4" strokeWidth={2} />
                     <div className="text-4xl font-bold text-gray-900 mb-2">9,000+</div>
                     <div className="text-sm text-gray-600">Schools Reached</div>
                   </CardContent>
                 </Card>
                 <Card className="text-center shadow-lg bg-white rounded-xl border-0">
-                  <CardContent className="pt-8 pb-8">
+                  <CardContent className="pt-2 pb-2">
                     <Clock className="h-10 w-10 text-cyan-600 mx-auto mb-4" strokeWidth={2} />
                     <div className="text-4xl font-bold text-gray-900 mb-2">47,000+</div>
                     <div className="text-sm text-gray-600">Volunteer Hours</div>
                   </CardContent>
                 </Card>
                 <Card className="text-center shadow-lg bg-white rounded-xl border-0">
-                  <CardContent className="pt-8 pb-8">
+                  <CardContent className="pt-2 pb-2">
                     <Users className="h-10 w-10 text-orange-600 mx-auto mb-4" strokeWidth={2} />
                     <div className="text-4xl font-bold text-gray-900 mb-2">2,800+</div>
                     <div className="text-sm text-gray-600">Children Engaged</div>
@@ -278,7 +272,7 @@ const Programs = () => {
 
             <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto mb-16">
               {/* Why It Matters */}
-              <div>
+              <div className="mt-8">
                 <h3 className="text-2xl font-bold text-orange-600 mb-6">Why It Matters?</h3>
                 <ul className="space-y-4 mb-8">
                   <li className="flex items-start">
@@ -311,7 +305,7 @@ const Programs = () => {
               {/* Impact Stats */}
               <div className="grid grid-cols-2 gap-4">
                 <Card className="text-center shadow-lg bg-white">
-                  <CardContent className="pt-8 pb-8">
+                  <CardContent className="pt-2 pb-2">
                     <div className="p-4 rounded-full bg-blue-100 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <BookOpen className="h-8 w-8 text-blue-600" />
                     </div>
@@ -320,7 +314,7 @@ const Programs = () => {
                   </CardContent>
                 </Card>
                 <Card className="text-center shadow-lg bg-white">
-                  <CardContent className="pt-8 pb-8">
+                  <CardContent className="pt-2 pb-2">
                     <div className="p-4 rounded-full bg-green-100 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <MapPin className="h-8 w-8 text-green-600" />
                     </div>
@@ -329,7 +323,7 @@ const Programs = () => {
                   </CardContent>
                 </Card>
                 <Card className="text-center shadow-lg bg-white">
-                  <CardContent className="pt-8 pb-8">
+                  <CardContent className="pt-2 pb-2">
                     <div className="p-4 rounded-full bg-cyan-100 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Clock className="h-8 w-8 text-cyan-600" />
                     </div>
@@ -338,7 +332,7 @@ const Programs = () => {
                   </CardContent>
                 </Card>
                 <Card className="text-center shadow-lg bg-white">
-                  <CardContent className="pt-8 pb-8">
+                  <CardContent className="pt-2 pb-2">
                     <div className="p-4 rounded-full bg-orange-100 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                       <Users className="h-8 w-8 text-orange-600" />
                     </div>
