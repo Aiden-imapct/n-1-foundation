@@ -72,12 +72,13 @@ const Contact = () => {
         </section>
 
         {/* Contact Section */}
-        <section className="py-12 bg-orange-50">
+        <section className="py-12 bg-[#FEFBF1]">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid lg:grid-cols-2 gap-16">
+            <div className="grid grid-cols-1
+    lg:grid-cols-[minmax(360px,35%)_minmax(600px,65%)] gap-8">
               {/* Contact Information */}
               <div>
-                <h2 className="text-4xl text-orange-500  font-bold mb-8">
+                <h2 className="text-3xl sm:text-4xl lg:text-[55px] lg:leading-[80px] text-[#FEB344] font-dm-serif mb-9">
                   Get In <span className="italic">Touch</span>
                 </h2>
 
@@ -86,19 +87,19 @@ const Contact = () => {
                     <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
                       <Mail className="h-6 w-6 text-blue-600" />
                     </div>
-                    <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                      <p className="font-bold">info@Nplusone.Org.in</p>
+                    <div className="font-poppins text-black">
+                      <h3 className="text-gray-900 mb-1">Email</h3>
+                      <p className="font-semibold">info@Nplusone.Org.in</p>
                     </div>
                   </div>
 
-                  <div className="flex items-start">
+                  <div className="flex items-start ">
                     <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
                       <Phone className="h-6 w-6 text-blue-600" />
                     </div>
-                    <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">Phone</h3>
-                      <p className="font-bold">+91-123-456-7890</p>
+                    <div className="font-poppins text-black">
+                      <h3 className="text-gray-900 mb-1">Phone</h3>
+                      <p className="font-semibold">+91-123-456-7890</p>
                     </div>
                   </div>
 
@@ -106,9 +107,9 @@ const Contact = () => {
                     <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
                       <MapPin className="h-6 w-6 text-blue-600" />
                     </div>
-                    <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">Address</h3>
-                      <p className="font-bold">
+                    <div className="font-poppins text-black">
+                      <h3 className="mb-1">Address</h3>
+                      <p className="font-semibold">
                         Pune, Maharashtra, India
                       </p>
                     </div>
@@ -116,51 +117,55 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Contact Form */}
-              <Card className="bg-white">
-                <CardHeader>
-                  <CardTitle className="text-xl text-gray-900">Send Us A Message</CardTitle>
+<div>
+   {/* Contact Form */}
+              <Card className="bg-white rounded-[18px] mb-8">
+                <CardHeader className="py-8 px-6">
+                  <CardTitle className="text-base xl:text-xl 2xl:text-2xl [min-width:1728px]:text-3xl text-black font-sarabun">Send Us A Message</CardTitle>
                 </CardHeader>
-                <CardContent className="space-y-4">
+                <CardContent className="space-y-8 font-poppins pb-8">
                   <div className="space-y-2">
-                    <Label htmlFor="name" className="text-gray-700">Your Name <span className="text-red-500">*</span></Label>
-                    <Input id="name" placeholder="Enter your name" className="bg-gray-50" />
+                    <Label htmlFor="name" className="text-black">Your Name <span className="text-[#E45E5E]">*</span></Label>
+                    <Input id="name" placeholder="Enter your name" className="bg-white border-[#DBE1E8] rounded-sm p-[14px]  placeholder:text-[#BDBDBD]" />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="email" className="text-gray-700">Email Address <span className="text-red-500">*</span></Label>
-                    <Input id="email" type="email" placeholder="example@domain.com" className="bg-gray-50" />
+                    <Label htmlFor="email" className="text-black">Email Address <span className="text-[#E45E5E]">*</span></Label>
+                    <Input id="email" type="email" placeholder="example@domain.com" className="bg-white border-[#DBE1E8] rounded-sm p-[14px]  placeholder:text-[#BDBDBD]"  />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-gray-700">Phone Number <span className="text-red-500">*</span></Label>
+                    <Label htmlFor="phone" className="text-black">Phone Number <span className="text-[#E45E5E]">*</span></Label>
                     <div className="flex gap-2">
-                      <select className="border rounded-md px-3 py-2 bg-gray-50 w-20">
+                      <select className="border px-[14px] bg-white w-20 border-[#DBE1E8] rounded-sm  text-xs xl:text-[13px] 2xl:text-sm">
                         <option>+91</option>
                       </select>
-                      <Input id="phone" type="tel" placeholder="" className="bg-gray-50 flex-1" />
+                      <Input id="phone" type="tel" placeholder="" className="bg-white flex-1 border-[#DBE1E8] rounded-sm p-[14px]  placeholder:text-[#BDBDBD]" />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="subject" className="text-gray-700">Subject <span className="text-red-500">*</span></Label>
-                    <Input id="subject" placeholder="Enter your subject" className="bg-gray-50" />
+                    <Label htmlFor="subject" className="text-black">Subject <span className="text-[#E45E5E]">*</span></Label>
+                    <Input id="subject" placeholder="Enter your subject" className="bg-white border-[#DBE1E8] rounded-sm p-[14px]  placeholder:text-[#BDBDBD]" />
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="message" className="text-gray-700">Message <span className="text-red-500">*</span></Label>
+                    <Label htmlFor="message" className="text-gray-700">Message <span className="text-[#E45E5E]">*</span></Label>
                     <Textarea
                       id="message"
                       placeholder="Tell us about your inquiry"
-                      className="min-h-[120px] bg-gray-50"
+                      className="min-h-[120px] bg-white border-[#DBE1E8] rounded-sm p-[14px]  placeholder:text-[#BDBDBD]"
                     />
                   </div>
 
-                  <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
-                    Send Message <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
+                 
                 </CardContent>
               </Card>
+               <Button className="w-full bg-[#004AAD] border-[1px] border-[#C0C0C0] hover:bg-transparent hover:border-2 hover:border-[#FEB344] hover:text-[#FEB344] rounded-sm text-white">
+                    Send Message <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+</div>
+             
             </div>
           </div>
         </section>
@@ -169,14 +174,14 @@ const Contact = () => {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-blue-600">Visit Us</h2>
-              <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+              <h2 className="font-dm-serif text-[#004AAD] text-3xl sm:text-4xl lg:text-[55px] lg:leading-[80px]">Visit Us</h2>
+              <p className="text-base xl:text-xl 2xl:text-2xl [min-width:1728px]:text-3xl text-[#494949] max-w-6xl mx-auto font-poppins font-medium">
                 We welcome visitors to our office. Please contact us in advance to schedule an appointment and ensure someone is available to meet with you.
               </p>
             </div>
 
             {/* Map Placeholder */}
-            <div className="rounded-2xl overflow-hidden shadow-lg">
+            <div className="rounded-2xl overflow-hidden shadow-lg max-w-6xl mx-auto">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.1160989077!2d72.71637332542264!3d19.082502005891443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1699000000000!5m2!1sen!2sin"
                 width="100%"
